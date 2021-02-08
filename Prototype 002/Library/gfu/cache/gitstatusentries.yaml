@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2021-02-08T14:54:50.211+01:00
+  initializedAtString: 2021-02-08T14:52:39.870+01:00
+  entries:
+  - path: Prototype 002\Assets\Scenes\Table.unity
+    fullPath: C:\Users\armok\Documents\GitHub\Cold-Age-Prototype-2\Prototype 002\Assets\Scenes\Table.unity
+    projectPath: Assets\Scenes\Table.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Prototype 002\Library\ArtifactDB
+    fullPath: C:\Users\armok\Documents\GitHub\Cold-Age-Prototype-2\Prototype 002\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Prototype 002\Library\SourceAssetDB
+    fullPath: C:\Users\armok\Documents\GitHub\Cold-Age-Prototype-2\Prototype 002\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Prototype 002\Temp\UnityLockfile
+    fullPath: C:\Users\armok\Documents\GitHub\Cold-Age-Prototype-2\Prototype 002\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
