@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class AnswerBroker : MonoBehaviour
 {
@@ -25,10 +26,14 @@ public class AnswerBroker : MonoBehaviour
     public GameObject UnitsGarbageCan;
     public GameObject msgBoxGameOver;
     public GameObject msgBoxVictory;
+    public GameObject moraleTxt;
+    public GameObject noiseTxt;
     public int A;
     public int P;
     public int C;
 
+    public int noise = 2;
+    public int morale = 6;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +43,7 @@ public class AnswerBroker : MonoBehaviour
     void FixedUpdate()
     {
         TrackAspectValues();
+        ClampMoraleAndNoise();
     }
 
 
@@ -115,6 +121,25 @@ public class AnswerBroker : MonoBehaviour
     {
         GameObject newCard = Instantiate(unitCard, recoveringDeck.transform);
         Debug.Log($"{Time.time} *{newCard.GetComponent<Unit>().Name}* has been instatiated into Recovering");
+    }
+    public void InstatiateUnitOnLocation(GameObject unitCard, Transform location)
+    {
+        GameObject newCard = Instantiate(unitCard, recoveringDeck.transform);
+        Debug.Log($"{Time.time} *{newCard.GetComponent<Unit>().Name}* has been instatiated into {location.gameObject.name}");
+    }
+    void ClampMoraleAndNoise()
+    {
+        if (morale < 0)
+            morale = 0;
+        if (noise < 0)
+            noise = 0;
+        if (morale > 12)
+            morale = 12;
+        if (noise > 10)
+            noise = 10;
+        moraleTxt.GetComponent<Text>().text = $"{morale}";
+        noiseTxt.GetComponent<Text>().text = $"{noise}";
+
     }
 
 }

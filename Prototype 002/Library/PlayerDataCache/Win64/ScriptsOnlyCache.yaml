@@ -46,11 +46,21 @@ ScriptsOnlyBuild:
     - UnitSelector
     - VaultEntrance
     - Vigilant
+    - WarWithHighborn
     - WeWentIntoTrap
+    GitHub.Unity.45.dll:
+    - GitHub.Unity.ApplicationCache
+    - GitHub.Unity.EnvironmentCache
+    - GitHub.Unity.GitAheadBehindCache
+    - GitHub.Unity.GitLocksCache
+    - GitHub.Unity.GitStatusCache
+    - GitHub.Unity.RepositoryInfoCache
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -87,113 +97,115 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11244}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11302}
     - Class: 114
-      Script: {instanceID: 11280}
+      Script: {instanceID: 11314}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11404}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11418}
     - Class: 114
-      Script: {instanceID: 11504}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11586}
     - Class: 114
-      Script: {instanceID: 11566}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 11620}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11706}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11850}
     - Class: 114
-      Script: {instanceID: 11872}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 12140}
     - Class: 114
-      Script: {instanceID: 12202}
+      Script: {instanceID: 12242}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12246}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12304}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12348}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 12356}
+      Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 12744}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12940}
     - Class: 114
-      Script: {instanceID: 12818}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12988}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 13054}
     - Class: 114
-      Script: {instanceID: 13066}
+      Script: {instanceID: 13204}
     - Class: 114
-      Script: {instanceID: 13086}
+      Script: {instanceID: 13224}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13138}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13274}
+      Script: {instanceID: 13414}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 13434}
     - Class: 114
-      Script: {instanceID: 13312}
+      Script: {instanceID: 13452}
     - Class: 114
-      Script: {instanceID: 13344}
+      Script: {instanceID: 13484}
     - Class: 114
-      Script: {instanceID: 13366}
+      Script: {instanceID: 13506}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 13380}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13560}
     - Class: 114
-      Script: {instanceID: 13450}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13644}
     - Class: 114
-      Script: {instanceID: 13634}
+      Script: {instanceID: 13734}
     - Class: 114
-      Script: {instanceID: 13648}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13808}
+      Script: {instanceID: 13790}
     - Class: 114
-      Script: {instanceID: 13820}
+      Script: {instanceID: 13952}
     - Class: 114
-      Script: {instanceID: 13878}
+      Script: {instanceID: 13964}
     - Class: 114
-      Script: {instanceID: 13972}
+      Script: {instanceID: 14024}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14264}
+      Script: {instanceID: 14412}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 14442}
+      Script: {instanceID: 14444}
     - Class: 114
-      Script: {instanceID: 14488}
+      Script: {instanceID: 14598}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14644}
+    - Class: 114
+      Script: {instanceID: 14678}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -593,7 +605,7 @@ ScriptsOnlyBuild:
     className: TreatmantExperimentEvent
   - hash:
       serializedVersion: 2
-      Hash: 776a2ac66af0831c514e253909a4ab9a
+      Hash: 68583e09df691004f4ad9ba08ab4cf0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnswerBroker
@@ -701,7 +713,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 8bf43e668ea14392f4808208973b43c6
+      Hash: 48faa2f8073dff26dbafa5b50081f6af
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TriggerEventBroker
@@ -984,4 +996,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Table.unity
-  playerPath: E:/Work Games/Prototype 002/Build 1/ColdAge.exe
+  playerPath: C:/Users/Lea/Desktop/ColdAge - Prototype v1.20/ColdAge.exe

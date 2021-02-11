@@ -31,24 +31,27 @@ public class HighbornDemandTribute : MonoBehaviour
     {
         eventScript.button1.gameObject.SetActive(true);
         eventScript.button2.gameObject.SetActive(true);
-        eventScript.button3.gameObject.SetActive(false);
+        eventScript.button3.gameObject.SetActive(true);
         eventScript.button4.gameObject.SetActive(false);
     }
     void SetTextsOfButtons()
     {
-        eventScript.button1Txt.text = "This one will serve.\nSacrifice 1 card.\nNote that only first marked will be sacrificed!";
-        eventScript.button2Txt.text = "A >= 5\nWe will never submit!\nInsert <War with Highborn>.\nExhaust event.";
+        eventScript.button1Txt.text = "This one will serve.\nSacrifice 1 card.\n" +
+            "Note that only first marked will be sacrificed and you can't Sacrifice if morale 3 or under!\n" +
+            "Lose Morale and Noise";
+        eventScript.button2Txt.text = "A >= 8\nWe will never submit!\nInsert <War with Highborn>.\nExhaust event\nAdd Noise.";
+        eventScript.button3Txt.text = "Submit";
     }
 
     void Answer1Update()
     {
-        if (broker.markedDeck.transform.childCount >=1)
+        if (broker.markedDeck.transform.childCount >=1 && broker.morale > 3)
             eventScript.button1.interactable = true;
         else eventScript.button1.interactable = false;
     }
     void Answer2Update()
     {
-        if (broker.A >= 5)
+        if (broker.A >= 8)
             eventScript.button2.interactable = true;
         else eventScript.button2.interactable = false;
     }
@@ -57,7 +60,8 @@ public class HighbornDemandTribute : MonoBehaviour
     {
         Debug.Log($"{Time.time} <{broker.markedDeck.transform.GetChild(0).GetComponent<Unit>().Name}> has been sacrificed.");
         broker.markedDeck.transform.GetChild(0).SetParent(broker.UnitsGarbageCan.transform);
-
+        broker.morale--;
+        broker.noise--;
         broker.ReturnMarkedToVigilant();
 
         broker.FinishingEventCard(gameObject);
@@ -69,7 +73,9 @@ public class HighbornDemandTribute : MonoBehaviour
         broker.InstatiateEvent(warWithHighborn);
 
         broker.SendMarkedIntoRecovering();
-
+        broker.noise++;
         broker.FinishingEventCard(gameObject);
     }
+    public void Answer3() => broker.msgBoxGameOver.SetActive(true);
+    
 }
